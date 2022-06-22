@@ -32,7 +32,7 @@ function Form() {
             setData(result.message);
         }
         else if(selection == 'unsplash'){
-            response = await fetch(`https://api.unsplash.com/search/photos?query=${value}&per_page=50&client_id=DZQphnP_zdFSysz91BV5h0vzX9_wHRvI7PThD8ApNUo`);
+            response = await fetch(`https://api.unsplash.com/search/photos?query=${value}&per_page=50&client_id=${Api.unsplashKey}`);
             result = await response.json();
             setData(result.results);
         }
