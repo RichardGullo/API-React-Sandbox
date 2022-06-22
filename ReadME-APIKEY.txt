@@ -1,0 +1,1 @@
+You do have to include your own api key to use the youtube api.
